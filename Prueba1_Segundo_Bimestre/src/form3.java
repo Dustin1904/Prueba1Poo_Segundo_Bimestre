@@ -8,7 +8,6 @@ public class form3 extends JFrame{
     JPanel saldo;
     private JButton menuButton;
     private JLabel saldoJL;
-    public static form2 ven;
     public form3(JFrame xd) {
         int cantidad = 1500;
         saldoJL.setText("Saldo: $" + String.valueOf(cantidad));
