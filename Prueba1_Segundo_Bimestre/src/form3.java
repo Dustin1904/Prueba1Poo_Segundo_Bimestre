@@ -5,7 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class form3 extends JFrame{
-    private JTextField textField1;
     JPanel saldo;
     private JButton menuButton;
     private JLabel saldoJL;
