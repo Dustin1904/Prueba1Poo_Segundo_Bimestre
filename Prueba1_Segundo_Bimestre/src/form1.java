@@ -18,7 +18,7 @@ public class form1 {
     private JButton ingresarButton;
     private JButton corregirButton;
 
-    public form1() {
+    public form1(JFrame xd) {
 
 
         a1Button.addActionListener(new ActionListener() {
@@ -90,10 +90,11 @@ public class form1 {
                 if (contra.equals(password)){
                     JFrame frame2 = new JFrame("Transaccion a realizar");
                     frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    frame2.setContentPane(new form2().Operacion);
+                    frame2.setContentPane(new form2(frame2).Operacion);
                     frame2.pack();
-                    frame2.setSize(250,250);
+                    frame2.setSize(500,500);
                     frame2.setVisible(true);
+                    xd.dispose();
                 }
                 else {
                     JOptionPane.showMessageDialog(null,"Contraseña incorretca");

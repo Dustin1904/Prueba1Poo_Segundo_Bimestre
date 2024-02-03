@@ -19,7 +19,7 @@ public class form5 {
     private JButton enterButton;
     private JButton menuButton;
 
-    public form5() {
+    public form5(JFrame xd) {
 
         a1Button.addActionListener(new ActionListener() {
             @Override
@@ -90,7 +90,12 @@ public class form5 {
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                xd.dispose();
+                JFrame pantallaAnterior = new JFrame("Transaccion a realizar");
+                pantallaAnterior.setContentPane(new form2(pantallaAnterior).Operacion);
+                pantallaAnterior.pack();
+                pantallaAnterior.setSize(500,500);
+                pantallaAnterior.setVisible(true);
             }
         });
     }

@@ -19,7 +19,7 @@ public class form4 extends JFrame{
     private JButton menuButton;
 
 
-    public form4() {
+    public form4(JFrame xd) {
         a1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -89,7 +89,12 @@ public class form4 extends JFrame{
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                xd.dispose();
+                JFrame pantallaAnterior = new JFrame("Transaccion a realizar");
+                pantallaAnterior.setContentPane(new form2(pantallaAnterior).Operacion);
+                pantallaAnterior.pack();
+                pantallaAnterior.setSize(500,500);
+                pantallaAnterior.setVisible(true);
             }
         });
     }
