@@ -20,6 +20,7 @@ public class form5 {
     private JButton menuButton;
 
     public form5(JFrame xd) {
+        textField1.setText("$");
 
         a1Button.addActionListener(new ActionListener() {
             @Override

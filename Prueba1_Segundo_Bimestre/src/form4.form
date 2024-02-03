@@ -14,7 +14,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font size="20"/>
+        </properties>
       </component>
       <component id="fc022" class="javax.swing.JButton" binding="a1Button" default-binding="true">
         <constraints>

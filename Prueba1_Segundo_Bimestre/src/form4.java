@@ -20,6 +20,7 @@ public class form4 extends JFrame{
 
 
     public form4(JFrame xd) {
+        textField1.setText("$");
         a1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
